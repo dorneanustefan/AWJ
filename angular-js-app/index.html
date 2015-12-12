@@ -6,11 +6,472 @@
   <link rel="stylesheet" media="all" href="css/custom.css">
 </head>
 <body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">AWJ Base Project</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#Persoana">Persoana</a></li>
+            <li><a href="#Angajat">Angajat</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr/>
 
   <div class="container">
     <div ng-controller="HomeController">
       <h1>{{ helloWorld }}</h1>
+        <p>Things aren't always <font><span style="background-color: #000000">#000000</span> </font> and #FFFFFF...
+        </p>
     </div>
+  </div>
+
+  <hr/>
+  
+      <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza o persoana</h2>                                     <!-- Afiseaza -->
+      </div>       
+        <iframe src="https://drive.google.com/file/d/0B7WoEl5VZnIWdFkxMjZpeWRLbEE/preview" class="img-thumbnail">
+        </iframe>
+      </div>
+      <div class="row">
+        <h3>Stefan Dorneanu</h3>
+        <p>Oracle, Stefan Dorneanu, 5600, 2 ani, Dezvoltare</p>
+      </div>
+    </div>
+  </div>
+
+                                <!-- /resources1 -->
+  <div class="container">
+    <h1 id="Persoana">Persoana</h1>
+    <h2>Listeaza toate persoanele</h2>                                      <!-- Listeaza -->
+    <table class="table table-bordered">
+      <tr>
+        <th>Firma</th>
+		<th>Nume</th>
+        <th>Pozitie</th>
+        <th>Salariu</th>
+		<th>Vechime</th>
+        <th>Departament</th>
+        <th style="width:210px; allign:center;">Optiuni</th>
+      </tr>
+      <tr>
+        <td>Oracle</td>
+        <td>Andrei</td>
+        <td>Junior C++ dev</td>
+		<td>4000</td>
+		<td>2</td>
+		<td>Dezvoltare<td>
+        <td>
+          <a href="#Persoana">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Metaxa</td>
+        <td>Andreea</td>
+        <td>Recrtuiment Senior</td>
+		<td>3500</td>
+        <td>7</td>
+        <td>HR</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>EEU Software</td>
+        <td>Stefan</td>
+        <td>Junior Java dev</td>
+		<td>4000</td>
+		<td>1</td>
+		<td>Dezvoltare<td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschis
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>IBM</td>
+        <td>Eduard</td>
+        <td>Marketing Intern</td>
+		<td>2800</td>
+		<td>5</td>
+		<td>Marketing<td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza o persoana</h2>                                      <!-- Editeaza -->
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Firma</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Firma">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Pozitie</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Pozitie">
+          </div>
+		    <div class="form-group">
+            <label for="attribute4">Salariu</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Salariu">
+          </div>
+		    <div class="form-group">
+            <label for="attribute5">Vechime</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Vechime">
+          </div>
+		  </div>
+		    <div class="form-group">
+            <label for="attribute6">Departament</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Departament">
+          </div>
+          <button type="submit" class="btn btn-info">Salveaza</button>
+        </form>
+      </div>
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga o persoana</h2>                                      <!-- Adauga -->
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Firma</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Firma">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Pozitie</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Pozitie">
+          </div>
+		  <div class="form-group">
+            <label for="attribute1">Salariu</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Salariu">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Vechime</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Vechime">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Departament</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Departament">
+          </div>
+          <button type="submit" class="btn btn-success">Adauga</button>
+        </form>
+      </div>
+    </div>
+
+  <hr/>
+
+                                        <!-- /resources2-->
+  <div class="container">
+    <h1 id="Angajati">Angajati</h1>
+    <h2>Listati toti angajatii</h2>                                      <!-- Listeaza -->
+    <table class="table table-bordered">
+      <tr>
+        <th>Firma</th>
+        <th>Nume</th>
+        <th>Pozitia in companie</th>
+		<th>Salariu</th>
+        <th>Vechime</th>
+        <th>Departament</th>
+        <th style="width:210px;">Optiuni</th>
+      </tr>
+      <tr>
+        <td>Oracle</td>
+        <td>Andrei</td>
+        <td>Junior C++ dev</td>
+		<td>4000</td>
+		<td>2</td>
+		<td>Dezvoltare<td>
+        <td>
+          <a href="#Angajati">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Metaxa</td>
+        <td>Andreea</td>
+        <td>Recrtuiment Senior</td>
+		<td>3500</td>
+        <td>7</td>
+        <td>HR</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>EEU Software</td>
+        <td>Stefan</td>
+        <td>Junior Java dev</td>
+		<td>4000</td>
+		<td>1</td>
+		<td>Dezvoltare<td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>IBM</td>
+        <td>Eduard</td>
+        <td>Marketing Intern</td>
+		<td>2800</td>
+		<td>5</td>
+		<td>Marketing<td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Deschide
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Editeaza
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Sterge
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+
+	
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza un angajat</h2>                                      <!-- Editeaza -->
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Firma</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Firma">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Pozitia in companie</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Pozitia in companie">
+          </div>  
+		  <div class="form-group">
+            <label for="attribute4">Salariu</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Salariu">
+          </div>
+          <div class="form-group">
+            <label for="attribute5">Vechime</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Vechime">
+          </div>
+          <div class="form-group">
+            <label for="attribute6">Departament</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Departament">
+          </div> 
+          <button type="submit" class="btn btn-info">Salveaza</button>
+        </form>
+      </div>
+
+	  	    <th>Firma</th>
+        <th>Nume</th>
+        <th>Pozitia in companie</th>
+		<th>Salariu</th>
+        <th>Vechime</th>
+        <th>Departament</th>
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga un angajat</h2>                                      <!-- Adauga -->
+        <form action="" method="">
+          <div class="form-group">
+            <label for="attribute1">Firma</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Firma">
+          </div>
+          <div class="form-group">
+            <label for="attribute2">Nume</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Nume">
+          </div>
+          <div class="form-group">
+            <label for="attribute3">Pozitia in companie</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Pozitia in companie">
+          </div>   
+		  <div class="form-group">
+            <label for="attribute4">Salariu</label>
+            <input type="text" class="form-control" id="attribute1" placeholder="Salariu">
+          </div>
+          <div class="form-group">
+            <label for="attribute5">Vechime</label>
+            <input type="text" class="form-control" id="attribute2" placeholder="Vechime">
+          </div>
+          <div class="form-group">
+            <label for="attribute6">Departament</label>
+            <input type="text" class="form-control" id="attribute3" placeholder="Departament">
+          </div> 
+          <button type="submit" class="btn btn-success">Adauga</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza un angajat</h2>                                    <!-- Afiseaza -->
+      </div>
+      <div class="col-md-2">
+        <img src="http://www.hicare.co.uk/uploads/images/eom%20images%20(1).JPG" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h3>Marius Bogdan Apostol</h3>
+        <p>ID: 1, Angajat din 2013</p>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Base Project &copy; 2015-2016</p>
+      <p class="text-muted pull-right">Dorneanu Stefan Vlad, 331AB</p>
+    </footer>
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
